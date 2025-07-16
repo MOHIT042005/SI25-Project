@@ -1,0 +1,4 @@
+.terraform/
+.github/.terraform/
+node_modules/
+output/
