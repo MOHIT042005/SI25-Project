@@ -1,5 +1,6 @@
 version: 0.0
 os: linux
+
 files:
   - source: /
     destination: /var/www/node-app
@@ -9,14 +10,14 @@ hooks:
   BeforeInstall:
     - location: scripts/beforeInstall.sh
       timeout: 180
-      runas: root
+      runas: ec2-user
 
   AfterInstall:
     - location: scripts/afterInstall.sh
       timeout: 180
-      runas: root
+      runas: ec2-user
 
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 180
-      runas: root
+      runas: ec2-user
