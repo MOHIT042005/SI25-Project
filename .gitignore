@@ -2,3 +2,5 @@
 .github/.terraform/
 node_modules/
 output/
+*.tfstate
+*.tfstate.backup
